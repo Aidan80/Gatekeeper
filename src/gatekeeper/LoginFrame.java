@@ -74,9 +74,11 @@ public class LoginFrame extends JFrame implements ActionListener {
             userText=userTextField.getText();
             passwordText=passwordField.getText();
             //User Verification goes here.
+            //link to registered visitors using SQL database
             if(userText.equalsIgnoreCase("Brandon")&&passwordText.equalsIgnoreCase("1234"))
             {
                 JOptionPane.showMessageDialog(this, "Login Successful");
+                //link to registered visitors
                 
             }
             else

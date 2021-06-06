@@ -39,6 +39,7 @@ public class RegistrationFrame extends JFrame implements ActionListener {
     JButton submitButton=new JButton("Submit");
     JButton resetButton=new JButton("Reset");
     JButton loginButton=new JButton("Login");
+    JButton AdminLoginbutton=new JButton("Admin");
     
     RegistrationFrame()
     { 
@@ -79,6 +80,7 @@ public class RegistrationFrame extends JFrame implements ActionListener {
         submitButton.setBounds(100,500,100,30);
         resetButton.setBounds(250,500,100,30);
         loginButton.setBounds(100,600,250,30);
+        AdminLoginbutton.setBounds(250, 600, 250, 30);
         //registerButton.setBounds(50,360,250,30);
     }
     
@@ -109,7 +111,7 @@ public class RegistrationFrame extends JFrame implements ActionListener {
         container.add(submitButton);
         container.add(resetButton);
         container.add(loginButton);
-        
+        container.add(AdminLoginbutton);
         //container.add(registerButton);
     }
     
@@ -118,10 +120,12 @@ public class RegistrationFrame extends JFrame implements ActionListener {
         submitButton.addActionListener(this);
         resetButton.addActionListener(this);
         loginButton.addActionListener(this);
+        AdminLoginbutton.addActionListener(this);
         //registerButton.addActionListener(this);
     }
     
     public void actionPerformed(ActionEvent e) {
+        
         
         if(e.getSource()==submitButton)
         {
@@ -175,7 +179,17 @@ public class RegistrationFrame extends JFrame implements ActionListener {
             LoginFrame frame = new LoginFrame();
             frame.setTitle("GateKeepers Login");
             frame.setVisible(true);
-            frame.setBounds(10,10,370,600);
+            frame.setBounds(500,10,370,600);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+         }
+        if(e.getSource()==AdminLoginbutton)
+        {
+            {
+            AdminLogin frame = new AdminLogin();
+            frame.setTitle("Admin Login");
+            frame.setVisible(true);
+            frame.setBounds(500,10,370,600);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
          }

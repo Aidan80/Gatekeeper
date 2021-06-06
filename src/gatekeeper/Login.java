@@ -12,10 +12,10 @@ public class Login {
     
     {
     RegistrationFrame frame = new RegistrationFrame();
-    frame.setTitle("GateKeepers Registration");
+    frame.setTitle("GATEKEEP");
     frame.setVisible(true);
     //frame.setSize(600,400);
-    frame.setBounds(10,10,500,700);
+    frame.setBounds(10,10,750,700);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
@@ -25,6 +25,27 @@ public class Login {
     frame.setVisible(true);
     //frame.setSize(600,400);
     frame.setBounds(10,10,500,700);
+    frame.setResizable(false);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+    {
+    AdminLogin frame = new AdminLogin();
+    frame.setTitle("Admin Login");
+    frame.setVisible(true);
+    //frame.setSize(600,400);
+    frame.setBounds(10,10,500,700);
+    frame.setResizable(false);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    
+    {
+    EmployeeDatabaseFrame frame = new EmployeeDatabaseFrame();
+    frame.setTitle("Employee Database");
+    frame.setVisible(true);
+    //frame.setSize(600,400);
+    frame.setBounds(10,10,500,700);
+    frame.setResizable(false);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
